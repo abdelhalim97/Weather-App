@@ -1,0 +1,16 @@
+body{padding:0;margin: 0;}
+.grid{display:grid}
+.g-1-3{grid-template-rows:2fr 1fr}
+.bg-blue{background-color:#04A9F4}
+.text-blue{color:#04A9F4}
+.text-gray{color:#969696}
+.bg-white{background-color:#FFF}
+.text-white{color:#FFF}
+.h-full-screen{height:100vh}
+.container{max-width: 900px;margin:0 auto}
+.w-full{width: 100%;}
+.btn{border-width: 0;cursor: pointer;}
+.flex{display: flex;}
+.justify-end{justify-content: end;}
+
+.mt-5{margin-top: 5px;}
