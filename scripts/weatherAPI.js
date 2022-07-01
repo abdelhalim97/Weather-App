@@ -76,48 +76,50 @@ const triggerWeather = async(latitude,longitude)=>{
         icon_one.className='text-gray fa-solid fa-cloud' 
     }
     //day2
-    const max_twoAPI=dataForecast.list[1].main.temp_max
-    const min_twoAPI=dataForecast.list[1].main.temp_min
-    day_two.innerHTML=moment.utc(dataForecast.list[1].dt,'X').add(timeZone,'seconds').format('dd')
+    const max_twoAPI=dataForecast.list[7].main.temp_max
+    const min_twoAPI=dataForecast.list[7].main.temp_min
+    day_two.innerHTML=moment.utc(dataForecast.list[7].dt,'X').add(timeZone,'seconds').format('dd')
     max_two.innerHTML=Math.round(max_twoAPI)+'°'
     min_two.innerHTML=Math.round(min_twoAPI) +'°'
-    if(dataForecast.list[1].weather[0].main='Clear'){
+    if(dataForecast.list[7].weather[0].main='Clear'){
         icon_two.className='text-gray fa-solid fa-sun'
     }
     else{
         icon_two.className='text-gray fa-solid fa-cloud' 
     }
+    console.log(dataForecast)
+
     //day3
-    const max_threeAPI=dataForecast.list[2].main.temp_max
-    const min_threeAPI=dataForecast.list[2].main.temp_min
-    day_three.innerHTML=moment.utc(dataForecast.list[2].dt,'X').add(timeZone,'seconds').format('dd')
+    const max_threeAPI=dataForecast.list[15].main.temp_max
+    const min_threeAPI=dataForecast.list[15].main.temp_min
+    day_three.innerHTML=moment.utc(dataForecast.list[15].dt,'X').add(timeZone,'seconds').format('dd')
     max_three.innerHTML=Math.round(max_threeAPI)+'°'
     min_three.innerHTML=Math.round(min_threeAPI) +'°'
-    if(dataForecast.list[2].weather[0].main='Clear'){
+    if(dataForecast.list[15].weather[0].main='Clear'){
         icon_three.className='text-gray fa-solid fa-sun'
     }
     else{
         icon_three.className='text-gray fa-solid fa-cloud' 
     }
     //day4
-    const max_fourAPI=dataForecast.list[3].main.temp_max
-    const min_fourAPI=dataForecast.list[3].main.temp_min
-    day_four.innerHTML=moment.utc(dataForecast.list[3].dt,'X').add(timeZone,'seconds').format('dd')
+    const max_fourAPI=dataForecast.list[23].main.temp_max
+    const min_fourAPI=dataForecast.list[23].main.temp_min
+    day_four.innerHTML=moment.utc(dataForecast.list[23].dt,'X').add(timeZone,'seconds').format('dd')
     max_four.innerHTML=Math.round(max_fourAPI)+'°'
     min_four.innerHTML=Math.round(min_fourAPI) +'°'
-    if(dataForecast.list[3].weather[0].main='Clear'){
+    if(dataForecast.list[23].weather[0].main='Clear'){
         icon_four.className='text-gray fa-solid fa-sun'
     }
     else{
         icon_four.className='text-gray fa-solid fa-cloud' 
     }
     //day5
-    const max_fiveAPI=dataForecast.list[4].main.temp_max
-    const min_fiveAPI=dataForecast.list[4].main.temp_min
-    day_five.innerHTML=moment.utc(dataForecast.list[4].dt,'X').add(timeZone,'seconds').format('dd')
+    const max_fiveAPI=dataForecast.list[31].main.temp_max
+    const min_fiveAPI=dataForecast.list[31].main.temp_min
+    day_five.innerHTML=moment.utc(dataForecast.list[31].dt,'X').add(timeZone,'seconds').format('dd')
     max_five.innerHTML=Math.round(max_fiveAPI)+'°'
     min_five.innerHTML=Math.round(min_fiveAPI) +'°'
-    if(dataForecast.list[4].weather[0].main='Clear'){
+    if(dataForecast.list[31].weather[0].main='Clear'){
         icon_five.className='text-gray fa-solid fa-sun'
     }
     else{
