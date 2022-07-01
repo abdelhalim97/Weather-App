@@ -10,13 +10,119 @@
 <body>
     <div class="grid g-1-3 h-full-screen    ">
         <div class="bg-blue container w-full">
-            <div class="flex justify-end mt-5"><button class="btn text-white bg-blue">Use Your Location</button></div>
+            <div class="flex justify-end mt-5">
+                <button id="location" class="btn text-white bg-blue">Use Your Location</button>
+            </div>
+            <div class="">
+                <div id="degr" class="text-white text-xl w-full text-center mt-sm">-°C</div>
+                <div id="place" class="text-white text-xl w-full text-center mt-sm">Earth</div>
+                <div id="desc" class="text-white text-xl w-full text-center mt-sm"></div>
+                <div class="container-sm mx-auto flex justify-between mt-sm">
+                    <div class="bg-white text-blue flex rounded-md p-btn bold">Wind: &nbsp;
+                        <i class="fa-regular fa-compass text-blue"></i>&nbsp;
+                        <div id="wind">-</div>km/h
+                    </div>
+                    <div class="bg-white text-blue flex rounded-md p-btn bold">
+                        <i class="fa-solid fa-sun text-blue"></i>&nbsp;
+                        Sunrise: &nbsp;
+                        <div id="sunrise">-</div>
+                    </div>
+                    <div class="bg-white text-blue flex rounded-md p-btn bold">
+                        <i class="fa-solid fa-sun text-blue"></i>&nbsp;Sunset: &nbsp;
+                        
+                        <div id="sunset">-</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="bg-gray container w-full">
-
+            <h2 class="text-center text-gray">5-Day Foreccast</h2>
+            <div class="flex justify-between container-sm mx-auto" >
+                <div class="w-20">
+                    <div class="mt-sm text-center">
+                        <i class="text-gray fa-solid fa-question" id="icon_one"></i>
+                    </div>
+                    <div class="mt-xs text-center" id="day_one">-</div>
+                    <div class="flex mt-xs">
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-up text-red"></i>
+                            <div id="max_one">-</div>
+                        </div>
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-down text-blue-700"></i>
+                            <div id="min_one">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-20">
+                    <div class="mt-sm text-center">
+                        <i class="text-gray fa-solid fa-question" id="icon_two"></i>
+                    </div>
+                    <div class="mt-xs text-center" id="day_two">-</div>
+                    <div class="flex mt-xs">
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-up text-red"></i>
+                            <div id="max_two">-</div>
+                        </div>
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-down text-blue-700"></i>
+                            <div id="min_two">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-20">
+                    <div class="mt-sm text-center">
+                        <i class="text-gray fa-solid fa-question" id="icon_three"></i>
+                    </div>
+                    <div class="mt-xs text-center" id="day_three">-</div>
+                    <div class="flex mt-xs">
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-up text-red"></i>
+                            <div id="max_three">-</div>
+                        </div>
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-down text-blue-700"></i>
+                            <div id="min_three">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-20">
+                    <div class="mt-sm text-center">
+                        <i class="text-gray fa-solid fa-question" id="icon_four"></i>
+                    </div>
+                    <div class="mt-xs text-center" id="day_four">-</div>
+                    <div class="flex mt-xs">
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-up text-red"></i>
+                            <div id="max_four">-</div>
+                        </div>
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-down text-blue-700"></i>
+                            <div id="min_four">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-20">
+                    <div class="mt-sm text-center">
+                        <i class="text-gray fa-solid fa-question" id="icon_five"></i>
+                    </div>
+                    <div class="mt-xs text-center" id="day_five">-</div>
+                    <div class="flex mt-xs">
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-up text-red"></i>
+                            <div id="max_five">-</div>
+                        </div>
+                        <div class="w-50 text-center">
+                            <i class="fa-solid fa-caret-down text-blue-700"></i>
+                            <div id="min_five">-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-<script src="/scripts/weatherAPI.js"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+<script src="scripts/weatherAPI.js"></script>
 <script src="https://kit.fontawesome.com/b57c097683.js" crossorigin="anonymous"></script>
 </html>
